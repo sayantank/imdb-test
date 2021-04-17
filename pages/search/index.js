@@ -43,7 +43,7 @@ export default function Search() {
           />
         </form>
       </div>
-      <div className="w-full flex justify-between">
+      <div className="w-full flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:justify-between">
         <RecentSearch searches={searches} />
         <Keyboard setSearch={setSearch} />
       </div>

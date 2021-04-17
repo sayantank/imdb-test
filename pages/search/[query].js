@@ -26,7 +26,7 @@ export default function SearchResult() {
       <div className="w-full">
         <h1 className="text-lg lg:text-2xl">Search Results</h1>
       </div>
-      <div className="grid grid-cols-5 w-full gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-5 w-full gap-5">
         {data.results?.map((movie, i) => (
           <MovieCard movie={movie} key={i} />
         ))}

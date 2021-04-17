@@ -6,7 +6,7 @@ export function Keyboard({ setSearch }) {
   const [isAlpha, setIsAlpha] = React.useState(true);
 
   return (
-    <div className="h-auto flex flex-row space-x-3 w-108">
+    <div className="h-auto flex flex-row space-x-3 w-full lg:w-108">
       <div className="flex space-y-3 flex-col flex-grow ">
         <div className="flex-1 grid grid-cols-7 gap-3">
           {isAlpha
@@ -29,7 +29,7 @@ export function Keyboard({ setSearch }) {
                 </button>
               ))}
         </div>
-        <div className="h-16 flex space-x-2">
+        <div className="h-12 lg:h-16 flex space-x-2">
           <button
             className="flex-1 p-1 bg-blue lg:text-lg"
             onClick={() => setSearch((old) => old + " ")}
@@ -52,13 +52,13 @@ export function Keyboard({ setSearch }) {
       </div>
       <div className="flex flex-col space-y-3 w-auto">
         <button
-          className="bg-dark-purple p-2 px-6 lg:text-lg flex justify-center items-center text-gold"
+          className="bg-dark-purple p-2 lg:px-6 lg:text-lg flex justify-center items-center text-gold"
           onClick={() => setSearch((old) => old.slice(0, -1))}
         >
           <Delete />
         </button>
         <button
-          className="bg-dark-purple p-2 px-6 lg:text-lg flex justify-center items-center text-gold"
+          className="bg-dark-purple p-2 lg:px-6 lg:text-lg flex justify-center items-center text-gold"
           onClick={() => setIsAlpha(!isAlpha)}
         >
           {isAlpha ? "123" : "ABC"}
