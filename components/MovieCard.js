@@ -12,7 +12,7 @@ export function MovieCard({ movie }) {
           style={{ width: "100%", height: "auto" }}
         />
       ) : (
-        <div className="flex-grow -mb-4 flex justify-center items-center">
+        <div className="h-16 lg:h-auto lg:flex-grow lg:-mb-4 flex justify-center items-center text-gray-400">
           No image found.
         </div>
       )}
