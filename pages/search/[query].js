@@ -18,7 +18,7 @@ export default function SearchResult() {
       setData(data);
     };
     getData();
-  }, [data]);
+  }, [query]);
 
   return (
     <main className="flex w-full items-center justify-center flex-col space-y-6 px-6">
